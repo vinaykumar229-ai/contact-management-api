@@ -27,7 +27,7 @@ class ContactComponent extends Component {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/contacts', {
+      const response = await fetch('https://contact-management-backend-otk0.onrender.com/api/contacts', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -51,7 +51,7 @@ class ContactComponent extends Component {
     const { name, email, phone, address, timezone } = this.state;
 
     try {
-      const response = await fetch('http://localhost:5000/api/contacts', {
+      const response = await fetch('https://contact-management-backend-otk0.onrender.com/api/contacts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ class ContactComponent extends Component {
     formData.append('file', file);
 
     try {
-      const response = await fetch('http://localhost:5000/api/upload/csv', {
+      const response = await fetch('https://contact-management-backend-otk0.onrender.com/api/upload/csv', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,
