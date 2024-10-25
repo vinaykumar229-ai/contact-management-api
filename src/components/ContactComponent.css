@@ -1,0 +1,67 @@
+.contacts-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7;
+  }
+  
+  .add-contact-form,
+  .upload-form {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="file"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .success-message {
+    color: #28a745;
+  }
+  
+  .error-message {
+    color: #dc3545;
+  }
+  
+  .contacts-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: transform 0.2s;
+  }
+  
+  .contact-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
